@@ -5,7 +5,7 @@
 ____
 
 ```
-# **Задание**
+Задание
 Разработать инструмент командной строки для учебного конфигурационного
 языка, синтаксис которого приведен далее. Этот инструмент преобразует текст из
 входного формата в выходной. Синтаксические ошибки выявляются с выдачей
@@ -192,8 +192,10 @@ ____
 # **Примеры использования**\
 
 ### game.conf:
-![alt text](image-1.png)
+<img width="548" height="134" alt="image" src="https://github.com/user-attachments/assets/c06c4d9f-7598-495c-8ce8-28cffd13e44b" />
+
 
 ### Вывод:
-![alt text](image-2.png)
+<img width="399" height="357" alt="image" src="https://github.com/user-attachments/assets/51d9eccd-18be-4fe6-8cc2-f9b217e37fa4" />
+
 
