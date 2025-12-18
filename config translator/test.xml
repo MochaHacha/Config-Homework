@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config>
+    <var name="BASE_HEALTH">
+        <number>100.0</number>
+    </var>
+    <var name="MULTIPLIER">
+        <number>1.5</number>
+    </var>
+    <var name="TOTAL_HP">
+        <number>150.0</number>
+    </var>
+</config>

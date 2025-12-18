@@ -1,0 +1,35 @@
+start: (instruction)*
+
+instruction: var_def
+
+var_def: "var" NAME "=" value ";"
+
+?value: number
+      | STRING
+      | list
+      | postfix_expr
+
+number: /[+-]?\d+\.\d+/
+
+STRING: "@\"" /.*?/ "\""
+
+list: "(list" value* ")"
+
+postfix_expr: "?{" (NAME | number | PLUS | MINUS | STAR | SLASH | LEN)* "}"
+
+PLUS: "+"
+MINUS: "-"
+STAR: "*"
+SLASH: "/"
+LEN: "len"
+
+NAME: /[_A-Z][_a-zA-Z0-9]*/
+
+COMMENT: /\\.*/
+
+MULTILINE_COMMENT: /#\[[\s\S]*?\]#/
+
+%import common.WS
+%ignore WS
+%ignore COMMENT
+%ignore MULTILINE_COMMENT
